@@ -15,7 +15,7 @@ export default function RegisterPage() {
      return
    }
    try {
-     const res = await axios.post('http://localhost/backend/register.php', {
+     const res = await axios.post('https://backends.kesug.com/register.php', {
        nama,
        email,
        password

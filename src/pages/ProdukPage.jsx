@@ -14,7 +14,7 @@ export default function ProdukPage() {
   // Ambil data produk dari backend
   useEffect(() => {
     axios
-      .get('http://localhost/backend/get_produk.php')
+      .get('https://backends.kesug.com/get_produk.php')
       .then((res) => {
         const data = Array.isArray(res.data) ? res.data : []
         setProdukList(data)
